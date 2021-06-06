@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- 燈箱css -->
+    <link rel="stylesheet" href="lightbox.css">
+    <!-- 燈箱JS -->
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/all.js"></script>
+    <title>jQuery練習</title>
+
+    <!-- swiper css -->
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper-container {
+          width: 1024px;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          object-fit: cover;
+        }
+      </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <ul class="social_link">
+                <li class="fb"><a href="#"><img src="images/facebookIcon.png" alt="fb"><span>粉絲團</span></a></li>
+                <li class="twitter"><a href="#"><img src="images/twitterIcon.png" alt="twitter"><span>追隨我們</span></a></li>
+            </ul>
+        </div>
+        <div class="nav">
+            <h1><a href="#">六角學院</a></h1>
+            <ul class="menu">
+                <li><a href="#">首頁</a></li>
+                <li class="product">
+                    <a href="#">產品介紹</a>
+                    <ul>
+                        <li><a href="">HTML5 基礎教學</a></li>
+                        <li><a href="">響應式網站教學</a></li>
+                        <li><a href="">jQuery 實戰教學</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+        </div>
+        <div class="swiper-container Swiper">
+            <div class="swiper-wrapper"> 
+                <div class="swiper-slide"><img src="images/banner.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/banner02.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/banner03.png" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> 
+            <div class="banner">
+                <h1>六角學院<br>讓您奠定良好的前端基礎</h1>
+            </div>
+        </div>
+        
+        <div class="course">
+            <div class="lesson">
+                <a href="images/html.png" data-lightbox="image-1" data-title="HTML5 基礎教學"><img src="images/html.png" alt=""></a>
+                <h2>HTML5 基礎教學</h2>
+                <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+            </div>
+            <div class="lesson">
+                <a href="images/rwd.png" data-lightbox="image-2" data-title="響應式網站教學"><img src="images/rwd.png" alt=""></a>
+                <h2>響應式網站教學</h2>
+                <p>響 應 式 網 站 設 計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧。</p>
+            </div>
+            <div class="lesson">
+                <a href="images/jQuery.png" data-lightbox="image-3" data-title="jQuery 實戰教學"><img src="images/jQuery.png" alt=""></a>
+                <h2>jQuery 實戰教學</h2>
+                <p>本課程有以下特色:</p>
+                <ul>
+                    <li>了解變數的使用方法</li>
+                    <li>學習並操作DOM</li>
+                    <li>學習基本數學運算方法</li>
+                    <li>套件的操作及運用</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <table class="table">
+                <caption>線上及實體課程差異</caption>
+                <thead>
+                    <tr>
+                        <th>項目</th>
+                        <th>Hex School 線上課程</th>
+                        <th>一般線上課程</th>
+                        <th>實體課程</th>
+                    </tr>
+                </thead> 
+                <tbody>  
+                    <tr>
+                        <td>費用</td>
+                        <td class="color">較低</td>
+                        <td class="color">較低</td>
+                        <td>較高</td>
+                    </tr>
+                    <tr>
+                        <td>學習效果</td>
+                        <td>一般</td>
+                        <td class="color">較低</td>
+                        <td class="color">很好</td>
+                    </tr>
+                    <tr>
+                        <td>Code review</td>
+                        <td class="color">有</td>
+                        <td>無</td>
+                        <td>不一定</td>
+                    </tr>
+                    <tr>
+                        <td>課程更新速度</td>
+                        <td class="color">普通</td>
+                        <td class="color">普通</td>
+                        <td>較慢</td>
+                    </tr>
+                    <tr>
+                        <td>多次複習</td>
+                        <td class="color">可</td>
+                        <td>可</td>
+                        <td>不可</td>
+                    </tr>
+                    <tr>
+                        <td>字幕</td>
+                        <td class="color">有</td>
+                        <td>不一定</td>
+                        <td>板書</td>
+                    </tr>
+                </tbody>    
+            </table>
+        </div>
+        <form action="data" class="form">
+            <h2>對我們課程有興趣嗎?<br>歡迎留下資料</h2>
+            <div class="form-item">
+                <div class="textarea">
+                    <textarea name="textarea" cols="70" rows="20"></textarea>
+                </div>
+                <div class="profile">
+                    <label for="name">姓名</label>
+                    <input type="text" name="name" placeholder="請輸入您的姓名">
+                    <label for="phone">電話</label>
+                    <input type="text" name="phone"placeholder="請輸入您的電話">
+                    <label for="email">信箱</label>
+                    <input type="text" name="email"placeholder="請輸入您的信箱">
+                    <input class="submit" type="submit" name="submit" value="送出">
+                </div>
+            </div>
+        </form>
+        <div class="footer">
+            <div class="footerlogo">
+                <img src="images/footerLogo.png" alt="">
+            </div>
+            <div class="footercontent">
+                <p>聯絡我們:<span>uchrissy8@gmail.com</span></p>
+                <p>電話:<span>0955755922</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".Swiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>
